@@ -1,13 +1,13 @@
 {
-  "name": "sengoku-hado",
+  "name": "her-stage",
   "version": "1.0.0",
-  "description": "戦国覇道 ～天下統一伝～ - 信長の野望風ブラウザ戦国シミュレーションゲーム",
+  "description": "Her Stage — 25〜30代女性向けキャリア・独立起業支援オンラインサロン",
   "main": "index.html",
   "scripts": {
     "start": "python3 -m http.server 3000",
     "dev": "python3 -m http.server 3000"
   },
-  "keywords": ["game", "sengoku", "simulation", "strategy", "nobunaga"],
+  "keywords": ["salon", "career", "women", "freelance", "consulting"],
   "author": "GenSpark AI Developer",
   "license": "MIT"
 }
