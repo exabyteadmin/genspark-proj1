@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Her Stage | 女性のための独立起業サポートサロン</title>
+  <title>Her Stage | 女性のための独立起業支援 オンラインサロン</title>
   <link rel="stylesheet" href="src/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- ========== HEADER / NAV ========== -->
+  <!-- ========== HEADER ========== -->
   <header class="header" id="header">
     <div class="header-inner container">
       <a href="index.html" class="logo">
-        <span class="logo-icon">✦</span>
+        <span class="logo-mark">✦</span>
         <span class="logo-text">Her <em>Stage</em></span>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav-list">
-          <li><a href="#about"   class="nav-link">サービスについて</a></li>
-          <li><a href="#features" class="nav-link">特徴</a></li>
-          <li><a href="#plans"   class="nav-link">プラン</a></li>
-          <li><a href="#voice"   class="nav-link">会員の声</a></li>
-          <li><a href="#faq"     class="nav-link">よくある質問</a></li>
+          <li><a href="#about"    class="nav-link">私たちについて</a></li>
+          <li><a href="#service"  class="nav-link">サービス</a></li>
+          <li><a href="#plans"    class="nav-link">料金プラン</a></li>
+          <li><a href="#results"  class="nav-link">実績・事例</a></li>
+          <li><a href="#team"     class="nav-link">チーム</a></li>
+          <li><a href="#faq"      class="nav-link">FAQ</a></li>
         </ul>
-        <a href="register.html" class="btn btn-primary nav-cta">無料相談に申し込む</a>
+        <a href="register.html" class="btn btn-nav">無料相談を予約する</a>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -37,88 +38,75 @@
 
   <!-- ========== HERO ========== -->
   <section class="hero" id="hero">
-    <div class="hero-bg-circles">
-      <span class="circle c1"></span>
-      <span class="circle c2"></span>
-      <span class="circle c3"></span>
+    <div class="hero-media">
+      <img
+        src="https://sspark.genspark.ai/cfimages?u1=%2BZTd1q3%2F3EwMimqR7hbBWKhfuXZH5z5%2BUmIDpgK5w0Xp7zbknlY%2B9pJ6Jv%2BMKRND9KvzNA5diqNQULnT1hVXxoN9MmnQYE%2BtvT7Ul01pgmSF9g%3D%3D&u2=cXgA9J3cJZTO%2BDoE&width=2560"
+        alt="女性たちのビジネスミーティング"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
     </div>
     <div class="container hero-content">
-      <p class="hero-eyebrow">Women's Career Salon</p>
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Women's Career & Independence Salon</span>
+      </div>
       <h1 class="hero-title">
-        あなたの<em>"やりたい"</em>を、<br />
-        <em>キャリア</em>に変える場所。
+        あなたの可能性を、<br />
+        <em>ビジネスへ。</em>
       </h1>
-      <p class="hero-sub">
-        会社を辞めて、フリーランス・独立起業へ。<br />
-        25〜30代の女性専門のオンラインサロンが、<br />
-        あなたの一歩を全力でサポートします。
+      <p class="hero-lead">
+        25〜30代女性専門のキャリア転換・独立起業支援サロン。<br />
+        専任コンサルタントと二人三脚で、会社員からフリーランスへ。
       </p>
-      <div class="hero-btns">
-        <a href="#plans" class="btn btn-primary btn-lg">プランを見る</a>
-        <a href="#about" class="btn btn-outline btn-lg">詳しく知る</a>
-      </div>
-      <div class="hero-badges">
-        <span class="badge"><i class="fa-solid fa-users"></i> 会員数 300名突破</span>
-        <span class="badge"><i class="fa-solid fa-star"></i> 満足度 98%</span>
-        <span class="badge"><i class="fa-solid fa-shield-halved"></i> 完全オンライン</span>
-      </div>
-    </div>
-    <div class="hero-image-wrap">
-      <div class="hero-image-inner">
-        <svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" class="hero-illustration">
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#fa9f8a;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#f7c5b8;stop-opacity:1" />
-            </linearGradient>
-            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#fff0ed;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#ffe4dc;stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <!-- Background blob -->
-          <ellipse cx="240" cy="290" rx="200" ry="240" fill="url(#grad2)" opacity="0.6"/>
-          <!-- Person silhouette -->
-          <circle cx="240" cy="160" r="72" fill="url(#grad1)"/>
-          <path d="M130 440 Q240 340 350 440" fill="url(#grad1)"/>
-          <!-- Decorative elements -->
-          <circle cx="370" cy="120" r="18" fill="#fa9f8a" opacity="0.5"/>
-          <circle cx="100" cy="200" r="12" fill="#f7c5b8" opacity="0.7"/>
-          <rect x="300" y="280" width="80" height="80" rx="16" fill="#fff" opacity="0.7"/>
-          <text x="340" y="328" text-anchor="middle" font-size="28" fill="#fa9f8a">✨</text>
-          <rect x="90" y="320" width="90" height="60" rx="12" fill="#fff" opacity="0.7"/>
-          <text x="135" y="357" text-anchor="middle" font-size="22" fill="#fa9f8a">💼</text>
-          <!-- Stars -->
-          <text x="170" y="80"  font-size="18" fill="#f9a8a0" opacity="0.8">✦</text>
-          <text x="340" y="200" font-size="14" fill="#f9a8a0" opacity="0.6">✦</text>
-          <text x="80"  y="140" font-size="10" fill="#f9a8a0" opacity="0.5">✦</text>
-        </svg>
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-primary btn-lg">
+          無料相談を予約する <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#about" class="btn btn-ghost btn-lg">
+          <i class="fa-solid fa-play"></i> サービスを知る
+        </a>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <span>Scroll</span>
-      <span class="scroll-line"></span>
+    <div class="hero-stat-bar">
+      <div class="container hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="300">0</span><span class="stat-unit">名+</span>
+          <span class="stat-label">累計会員数</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="92">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">独立達成率</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="3">0</span><span class="stat-unit">ヶ月</span>
+          <span class="stat-label">平均独立期間</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="15">0</span><span class="stat-unit">名</span>
+          <span class="stat-label">専属コンサルタント</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== NUMBERS ========== -->
-  <section class="numbers-bar">
-    <div class="container numbers-grid">
-      <div class="number-item">
-        <span class="num">300<small>名+</small></span>
-        <span class="label">累計会員数</span>
-      </div>
-      <div class="number-item">
-        <span class="num">92<small>%</small></span>
-        <span class="label">独立達成率</span>
-      </div>
-      <div class="number-item">
-        <span class="num">3<small>ヶ月</small></span>
-        <span class="label">平均独立期間</span>
-      </div>
-      <div class="number-item">
-        <span class="num">15<small>名+</small></span>
-        <span class="label">専属コンサルタント</span>
+  <!-- ========== MEDIA LOGOS (信頼バー) ========== -->
+  <section class="media-bar">
+    <div class="container">
+      <p class="media-bar-label">メディア掲載・受賞実績</p>
+      <div class="media-logos">
+        <span class="media-logo-item">Forbes JAPAN</span>
+        <span class="media-logo-divider">|</span>
+        <span class="media-logo-item">日経ウーマン</span>
+        <span class="media-logo-divider">|</span>
+        <span class="media-logo-item">東洋経済オンライン</span>
+        <span class="media-logo-divider">|</span>
+        <span class="media-logo-item">NIKKEI STYLE</span>
+        <span class="media-logo-divider">|</span>
+        <span class="media-logo-item">Business Insider</span>
       </div>
     </div>
   </section>
@@ -126,85 +114,127 @@
   <!-- ========== ABOUT ========== -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">About Her Stage</p>
-        <h2 class="section-title">Her Stage とは？</h2>
-        <p class="section-desc">
-          「このままでいいのかな」「でも一人では不安…」<br />
-          そんな気持ちを抱える25〜30代の女性のために生まれた、<br />
-          キャリア転換・独立起業専門のオンラインサロンです。
-        </p>
-      </div>
-      <div class="about-cards">
-        <div class="about-card">
-          <div class="about-icon">🌸</div>
-          <h3>安心できるコミュニティ</h3>
-          <p>同じ悩みを持つ仲間と繋がれるクローズドなオンラインサロン。批判のない温かい環境で本音を話せます。</p>
+      <div class="split-layout split-reverse">
+        <div class="split-image reveal-left">
+          <img
+            src="https://sspark.genspark.ai/cfimages?u1=Cd5lY2kl9zAhmFtwN8pjhTJQmcc%2F3mmwenUG5RYXO2zzUo4O3AqpCPIH0tGieVUdeKp%2BRlguLayYUCoH0l%2F4r431zwlJwNdyfEdz9uiQWTQlb9NkF4iSPLzSwsPaBMbgRIzdrb0hk21wQtrhrYLfLrNdYlNrcN%2FTSx92FPYfgRRebOnG&u2=0F%2FencIrRaJ4fXh1&width=2560"
+            alt="オフィスで仕事をする女性"
+            class="split-img"
+          />
+          <div class="split-img-accent"></div>
+          <div class="split-badge">
+            <span class="badge-num">2019</span>
+            <span class="badge-text">年設立</span>
+          </div>
         </div>
-        <div class="about-card">
-          <div class="about-icon">💬</div>
-          <h3>プロのカウンセリング</h3>
-          <p>キャリアカウンセラーがあなたの悩みや価値観を丁寧に引き出し、自分らしい働き方を一緒に探します。</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon">🚀</div>
-          <h3>実践的なコンサルティング</h3>
-          <p>独立・フリーランス経験豊富なコンサルタントが、具体的なロードマップと収益化戦略を提案します。</p>
+        <div class="split-body reveal-right">
+          <p class="section-eyebrow">About Her Stage</p>
+          <h2 class="section-title">
+            日本最大級の<br />女性キャリア支援サロン
+          </h2>
+          <p class="section-lead">
+            Her Stage は、2019年の設立以来、累計300名を超える女性の独立・起業を支援してきた
+            日本最大級の女性専門キャリアコンサルティングサロンです。
+          </p>
+          <p class="section-text">
+            「やりたいことはある。でも一人では不安」——そんな25〜30代の女性に向けて、
+            プロのカウンセラーとコンサルタントが二人三脚でサポート。
+            フリーランス・起業・副業など、あなたの理想の働き方を共に実現します。
+          </p>
+          <div class="about-features">
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>女性専任カウンセラー・コンサルタント在籍</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>完全オンライン・全国どこからでも参加可能</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Forbes JAPAN・日経ウーマン等メディア多数掲載</span>
+            </div>
+            <div class="about-feat">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>経済産業省「女性起業家支援事業」採択企業</span>
+            </div>
+          </div>
+          <a href="#service" class="btn btn-primary">サービス詳細を見る <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FEATURES ========== -->
-  <section class="section section-alt" id="features">
+  <!-- ========== SERVICE ========== -->
+  <section class="section section-dark" id="service">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Features</p>
-        <h2 class="section-title">Her Stage の特徴</h2>
+      <div class="section-header section-header-center">
+        <p class="section-eyebrow eyebrow-light">Our Services</p>
+        <h2 class="section-title title-light">3つのコアサービス</h2>
+        <p class="section-lead lead-light">
+          カウンセリング・コンサルティング・コミュニティの三位一体で、<br />
+          あなたの独立・起業を多角的にサポートします。
+        </p>
       </div>
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-num">01</div>
-          <div class="feature-body">
-            <h3>完全オンライン・全国どこでも</h3>
-            <p>Zoomを使ったビデオ通話でコンサルティングを実施。通勤不要で、子育て中・地方在住の方も参加できます。</p>
+      <div class="service-cards">
+
+        <div class="service-card reveal-up">
+          <div class="service-card-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=k%2FdjjcpuFAMGicQYX4%2BSvCj90V%2BYuvDLF6huM2R57GJxb91R5Q29ulVfp2%2Bu6E%2F1JIpYj7%2F3%2FwtHlXTHmkUBwrgMLfOKFR4%2FlDCBzLYgB3oZDA%3D%3D&u2=hILXBHX6WZyAzGX8&width=2560"
+              alt="カウンセリング"
+            />
+          </div>
+          <div class="service-card-body">
+            <div class="service-num">01</div>
+            <h3>キャリアカウンセリング</h3>
+            <p>女性専任カウンセラーがあなたの価値観・強み・不安を丁寧に整理。「本当にやりたいこと」を言語化し、迷いのない一歩を後押しします。</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-caret-right"></i> 個別セッション（45分 / Zoom）</li>
+              <li><i class="fa-solid fa-caret-right"></i> 強み分析・価値観整理</li>
+              <li><i class="fa-solid fa-caret-right"></i> ライフキャリア設計</li>
+            </ul>
           </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-num">02</div>
-          <div class="feature-body">
-            <h3>女性専門の手厚いサポート</h3>
-            <p>ライフイベント（結婚・出産）を考慮した中長期キャリア設計。女性が抱えやすいリスクも一緒に整理します。</p>
+
+        <div class="service-card reveal-up" style="--delay:.12s">
+          <div class="service-card-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=4CyF5Tc%2BQJOGDMGUXk%2FYHC1yTFIozHQ1sDZc2DHdkjRx8vMSdcnsUUjluNSH%2FFhTtjUW3BtZA0%2B6TkHnaxlSLw4SxuIqOB4txZNr420kLDT%2FoA%3D%3D&u2=XblyR8DdCvfZOCWN&width=2560"
+              alt="グループコンサルティング"
+            />
+          </div>
+          <div class="service-card-body">
+            <div class="service-num">02</div>
+            <h3>1on1コンサルティング</h3>
+            <p>独立・起業経験豊富な専任コンサルタントが、事業計画から収益化戦略まで具体的にアドバイス。失敗しない独立ロードマップを作成します。</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-caret-right"></i> 事業計画・ロードマップ策定</li>
+              <li><i class="fa-solid fa-caret-right"></i> 収益化・集客戦略</li>
+              <li><i class="fa-solid fa-caret-right"></i> 月次進捗レビュー</li>
+            </ul>
           </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-num">03</div>
-          <div class="feature-body">
-            <h3>会員限定コンテンツ</h3>
-            <p>フリーランス契約書テンプレート、収支管理シート、独立ロードマップなど実用的なリソースを提供。</p>
+
+        <div class="service-card reveal-up" style="--delay:.24s">
+          <div class="service-card-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=z5nqBKkFklja62aYTzJ3b1qEKucCl3HFyh1MBwA4LF0sDgHUpm6SP159DeLYWViQgrwIHMj4%2B8cHLkkCRVKJc6quTJasRag5X%2FD5VxXMpW%2FhjQ%3D%3D&u2=C13AFtX5Ugpxk98Q&width=2560"
+              alt="女性コミュニティ"
+            />
+          </div>
+          <div class="service-card-body">
+            <div class="service-num">03</div>
+            <h3>会員コミュニティ</h3>
+            <p>同じ目標を持つ仲間との繋がりが最大の財産。月次勉強会・Slackコミュニティ・先輩会員との交流で、孤独な起業を乗り越えます。</p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-caret-right"></i> 月次グループ勉強会</li>
+              <li><i class="fa-solid fa-caret-right"></i> Slackプライベートコミュニティ</li>
+              <li><i class="fa-solid fa-caret-right"></i> 会員限定リソース・テンプレート</li>
+            </ul>
           </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-num">04</div>
-          <div class="feature-body">
-            <h3>月1回のグループ勉強会</h3>
-            <p>税務・確定申告、SNS集客、ポートフォリオ作成など実践テーマで毎月開催（録画視聴も可）。</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-num">05</div>
-          <div class="feature-body">
-            <h3>チャットサポート（平日）</h3>
-            <p>ちょっとした疑問もテキストで気軽に相談。平日10〜18時はコンサルタントが迅速に返答します。</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <div class="feature-num">06</div>
-          <div class="feature-body">
-            <h3>会員コミュニティ（Slack）</h3>
-            <p>先輩フリーランサーや独立済みの会員と交流できるプライベートSlackで、いつでも繋がれます。</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -212,156 +242,344 @@
   <!-- ========== PLANS ========== -->
   <section class="section" id="plans">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Subscription Plans</p>
+      <div class="section-header section-header-center">
+        <p class="section-eyebrow">Pricing Plans</p>
         <h2 class="section-title">サブスクリプションプラン</h2>
-        <p class="section-desc">
-          あなたの状況・目標に合わせて2つのプランからお選びください。<br />
-          どちらも月単位の契約で、いつでも解約・変更が可能です。
+        <p class="section-lead">
+          月単位の契約で、いつでも変更・解約が可能です。<br />
+          まずは初月無料でお試しください。
         </p>
       </div>
-      <div class="plans-wrap">
+      <div class="plans-grid">
 
-        <!-- Plan 1 -->
-        <div class="plan-card">
-          <div class="plan-tag">スタンダード</div>
-          <div class="plan-name">Petal Plan</div>
-          <p class="plan-catch">まずは一歩。自分の軸を見つけたい方へ。</p>
-          <div class="plan-price">
-            <span class="currency">¥</span>
-            <span class="amount">4,900</span>
-            <span class="per">/ 月（税込）</span>
+        <!-- Petal -->
+        <div class="plan-card reveal-up">
+          <div class="plan-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=5kGZDpqrcd%2ByG0qRM%2F8bDvkSAzVmvLmI0cWVrUSSnfjU51HCD31otiEuW0VG7oNul4vvmYUtoVyHvunB%2ByL86x0Ajpg4vB976TRnJ5mhIsccBd2IXYGPl9limAK9Ep%2BVh8AWbueQtsG7rzpJ3fKFAESJObEUXjNZbWJXYuGNU7x1jmuLrlbAPuqoYzk%3D&u2=1WcIway8Xda1ZWPW&width=2560"
+              alt="Petal Plan"
+            />
+            <div class="plan-img-overlay"></div>
+            <div class="plan-tag-on-img">Petal Plan</div>
           </div>
-          <ul class="plan-features">
-            <li><i class="fa-solid fa-check"></i> 月1回・個別カウンセリング（45分）</li>
-            <li><i class="fa-solid fa-check"></i> 会員限定Slackコミュニティ参加</li>
-            <li><i class="fa-solid fa-check"></i> 月1回グループ勉強会（録画視聴含む）</li>
-            <li><i class="fa-solid fa-check"></i> 会員限定テンプレートDL（基本セット）</li>
-            <li><i class="fa-solid fa-check"></i> チャットサポート 平日10〜18時</li>
-            <li class="inactive"><i class="fa-solid fa-xmark"></i> 1on1コンサルティング</li>
-            <li class="inactive"><i class="fa-solid fa-xmark"></i> 事業計画レビュー</li>
-            <li class="inactive"><i class="fa-solid fa-xmark"></i> 優先サポート</li>
-          </ul>
-          <a href="register.html?plan=petal" class="btn btn-outline btn-block">このプランで始める</a>
-          <p class="plan-note">※ 初月は無料体験期間あり</p>
+          <div class="plan-body">
+            <p class="plan-catch">まず一歩。自分の軸を見つけたい方へ。</p>
+            <div class="plan-price-row">
+              <span class="plan-price"><em>¥4,900</em><small> / 月（税込）</small></span>
+            </div>
+            <ul class="plan-features">
+              <li class="ok"><i class="fa-solid fa-check"></i>月1回 個別カウンセリング（45分）</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>会員限定 Slack コミュニティ</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>月1回 グループ勉強会</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>会員限定テンプレート（基本）</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>チャットサポート（平日）</li>
+              <li class="no"><i class="fa-solid fa-xmark"></i>1on1コンサルティング</li>
+              <li class="no"><i class="fa-solid fa-xmark"></i>事業計画レビュー</li>
+              <li class="no"><i class="fa-solid fa-xmark"></i>専属コンサルタント</li>
+            </ul>
+            <a href="register.html?plan=petal" class="btn btn-outline btn-block">このプランで始める</a>
+            <p class="plan-free-note">※ 初月無料体験あり</p>
+          </div>
         </div>
 
-        <!-- Plan 2 -->
-        <div class="plan-card plan-popular">
-          <div class="popular-badge">おすすめ</div>
-          <div class="plan-tag">プレミアム</div>
-          <div class="plan-name">Bloom Plan</div>
-          <p class="plan-catch">本気で独立を目指す方への全力サポート。</p>
-          <div class="plan-price">
-            <span class="currency">¥</span>
-            <span class="amount">9,000</span>
-            <span class="per">/ 月（税込）</span>
+        <!-- Bloom -->
+        <div class="plan-card plan-featured reveal-up" style="--delay:.15s">
+          <div class="plan-popular-badge">おすすめ</div>
+          <div class="plan-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=%2BZTd1q3%2F3EwMimqR7hbBWKhfuXZH5z5%2BUmIDpgK5w0Xp7zbknlY%2B9pJ6Jv%2BMKRND9KvzNA5diqNQULnT1hVXxoN9MmnQYE%2BtvT7Ul01pgmSF9g%3D%3D&u2=cXgA9J3cJZTO%2BDoE&width=2560"
+              alt="Bloom Plan"
+            />
+            <div class="plan-img-overlay"></div>
+            <div class="plan-tag-on-img">Bloom Plan</div>
           </div>
-          <ul class="plan-features">
-            <li><i class="fa-solid fa-check"></i> 月3時間・1on1コンサルティング（60分×3回）</li>
-            <li><i class="fa-solid fa-check"></i> 月1回・個別カウンセリング（45分）</li>
-            <li><i class="fa-solid fa-check"></i> 会員限定Slackコミュニティ参加</li>
-            <li><i class="fa-solid fa-check"></i> 月1回グループ勉強会（録画視聴含む）</li>
-            <li><i class="fa-solid fa-check"></i> 会員限定テンプレートDL（フルセット）</li>
-            <li><i class="fa-solid fa-check"></i> 事業計画・ポートフォリオレビュー（月1回）</li>
-            <li><i class="fa-solid fa-check"></i> チャットサポート 平日10〜18時（優先対応）</li>
-            <li><i class="fa-solid fa-check"></i> 専属コンサルタントのアサイン</li>
-          </ul>
-          <a href="register.html?plan=bloom" class="btn btn-primary btn-block">このプランで始める</a>
-          <p class="plan-note">※ 初月は無料体験期間あり</p>
+          <div class="plan-body">
+            <p class="plan-catch">本気で独立を目指す方への全力サポート。</p>
+            <div class="plan-price-row">
+              <span class="plan-price"><em>¥9,000</em><small> / 月（税込）</small></span>
+            </div>
+            <ul class="plan-features">
+              <li class="ok"><i class="fa-solid fa-check"></i>月3時間 1on1コンサルティング（60分×3）</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>月1回 個別カウンセリング（45分）</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>会員限定 Slack コミュニティ</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>月1回 グループ勉強会</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>会員限定テンプレート（フルセット）</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>事業計画・ポートフォリオレビュー</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>チャットサポート優先対応</li>
+              <li class="ok"><i class="fa-solid fa-check"></i>専属コンサルタントのアサイン</li>
+            </ul>
+            <a href="register.html?plan=bloom" class="btn btn-primary btn-block">このプランで始める</a>
+            <p class="plan-free-note">※ 初月無料体験あり</p>
+          </div>
         </div>
 
       </div>
-      <p class="plans-notice">
+      <p class="plans-note">
         <i class="fa-solid fa-circle-info"></i>
-        どちらのプランも最低契約期間なし。月単位での解約・プラン変更が可能です。<br />
-        ご不明な点は<a href="register.html">無料相談</a>にてお気軽にご質問ください。
+        最低契約期間なし。月単位で解約・プラン変更が可能です。
+        詳細は<a href="register.html">無料相談</a>にてご確認ください。
       </p>
     </div>
   </section>
 
-  <!-- ========== FLOW ========== -->
-  <section class="section section-alt" id="flow">
+  <!-- ========== RESULTS / CASE STUDIES ========== -->
+  <section class="section section-tinted" id="results">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">How to Start</p>
-        <h2 class="section-title">ご利用の流れ</h2>
+      <div class="section-header section-header-center">
+        <p class="section-eyebrow">Member Results</p>
+        <h2 class="section-title">会員の独立実績・事例</h2>
+        <p class="section-lead">Her Stage から巣立った会員の一部をご紹介します。</p>
       </div>
-      <div class="flow-steps">
-        <div class="flow-step">
-          <div class="step-circle">01</div>
-          <div class="step-body">
-            <h3>無料相談に申し込む</h3>
-            <p>フォームに必要事項を入力し、無料相談を予約。Zoomでカウンセラーと30分お話しします。</p>
+
+      <div class="case-grid">
+
+        <div class="case-card reveal-up">
+          <div class="case-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=Evr2Ge15RfgxtpGam6j%2FikQr9DZWEmzkXmH8edfU%2Bm%2FewkMqtUlJj5unFS%2FbrCcRmtMaDbO%2BchYxo59LpPbwjJBYpuE92kAuAWbba79pUQDPalrUJ18%2BSSYgyHbQXJIgmbK%2FPgMkoN535Y2ylLpBW3C4WsiTXlBxYK6ccgC8TJYZcMZlUMEDDhXTARWxQG9tCSET&u2=zualj%2FEvnE5%2FU6gG&width=2560"
+              alt="会員 Aさん"
+            />
+          </div>
+          <div class="case-body">
+            <div class="case-tags">
+              <span class="case-tag">Webデザイン</span>
+              <span class="case-tag">フリーランス</span>
+            </div>
+            <h3>A さん（28歳）</h3>
+            <p class="case-role">元会社員 → フリーランスWebデザイナー</p>
+            <p class="case-result"><span>月収</span><strong>40万円</strong><span>達成</span></p>
+            <blockquote>
+              「カウンセリングで自分の強みを整理でき、入会3ヶ月で独立。
+              今は好きな時間・好きな場所で働けています。」
+            </blockquote>
           </div>
         </div>
-        <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="flow-step">
-          <div class="step-circle">02</div>
-          <div class="step-body">
-            <h3>プランを選んで会員登録</h3>
-            <p>希望のプランを選択し、クレジットカードでお支払い。登録後すぐにサービスをご利用いただけます。</p>
+
+        <div class="case-card reveal-up" style="--delay:.12s">
+          <div class="case-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=LQgoMrsJOV7Fc6i%2B%2FFf54mTvkR7NJKPjByfNYHPnz8aylK3w3jaTIjkGOrFWrypCtsQfn8DpgLlCGQxWLGrfxzYETXoJOILW2CJAcV7iign4xT7doggsLp31pz7B83jnYjtKiKdVE5Ysxofv8GNI%2F%2FbrgA43DnWn6lxx1bSIVx8JlSR7lt0o36gZ7sTD&u2=AsTWprUK6PEWdTvc&width=2560"
+              alt="会員 Mさん"
+            />
+          </div>
+          <div class="case-body">
+            <div class="case-tags">
+              <span class="case-tag">マーケティング</span>
+              <span class="case-tag">独立コンサル</span>
+            </div>
+            <h3>M さん（26歳）</h3>
+            <p class="case-role">元営業職 → マーケティングコンサルタント</p>
+            <p class="case-result"><span>半年で</span><strong>法人化</strong><span>達成</span></p>
+            <blockquote>
+              「事業計画をコンサルタントと一緒に作れたのが決め手。
+              一人では気づけなかった強みをビジネスに転換できました。」
+            </blockquote>
           </div>
         </div>
-        <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="flow-step">
-          <div class="step-circle">03</div>
-          <div class="step-body">
-            <h3>コンサルティング開始</h3>
-            <p>専属コンサルタントとの初回セッションで現状・目標を整理。あなただけのロードマップを作成します。</p>
+
+        <div class="case-card reveal-up" style="--delay:.24s">
+          <div class="case-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=8B1Fp4PYfhBasqb9avNh1Fk77am3H0xzLLs9ABtJZhyjok1VEWblrcR3NiBV5vw9zAf4WJqoOYtHgeQVMK3MN3pQeiqgx6lVJIqtx%2BsCRDj9jQ%3D%3D&u2=5jMDjyJ%2BA0u7mBHD&width=2560"
+              alt="会員 Rさん"
+            />
+          </div>
+          <div class="case-body">
+            <div class="case-tags">
+              <span class="case-tag">コーチング</span>
+              <span class="case-tag">オンライン起業</span>
+            </div>
+            <h3>R さん（29歳）</h3>
+            <p class="case-role">元経理職 → ライフコーチ・オンライン起業</p>
+            <p class="case-result"><span>初月から</span><strong>受注獲得</strong><span>達成</span></p>
+            <blockquote>
+              「30歳を前に焦りだけがあった私に、方向性と自信を与えてくれた場所。
+              女性専門だからこそ本音で話せました。」
+            </blockquote>
           </div>
         </div>
-        <div class="flow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="flow-step">
-          <div class="step-circle">04</div>
-          <div class="step-body">
-            <h3>独立・起業を実現！</h3>
-            <p>月次セッションで進捗確認＆軌道修正。コミュニティの仲間と励まし合いながら夢を現実にします。</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ========== VOICE ========== -->
-  <section class="section" id="voice">
+  <!-- ========== PHOTO FEATURE (フルブリード) ========== -->
+  <section class="photo-feature">
+    <div class="photo-feature-media">
+      <img
+        src="https://sspark.genspark.ai/cfimages?u1=T8F2Mwx662LFGqFjdl08ijoJBo1hy11M8flz8coU4Ly0dmp9qf4kN3thR%2B3V6%2BUVnaQCi0g%2FkJXhGHLEqW%2FCZsMOxtYvkl8IssFJzmA5z2py4IKnvkJvWxvzW%2Fq5tGqpJbhwN17ZK8NqGWfqnvmgs5y9QsYbALmEDGDlk7Z10jXKoQkSbH7P2bQAIG8%2FFQ%3D%3D&u2=q918%2BovggL5yJ1Rz&width=2560"
+        alt="モダンなオフィス空間"
+      />
+      <div class="photo-feature-overlay"></div>
+    </div>
+    <div class="container photo-feature-content">
+      <p class="section-eyebrow eyebrow-light">Our Environment</p>
+      <h2 class="photo-feature-title">
+        オンラインでも、<br />
+        <em>本物の繋がり</em>を。
+      </h2>
+      <p class="photo-feature-lead">
+        完全オンラインながら、毎月の勉強会・Slackコミュニティ・1on1セッションを通じて<br />
+        リアルのオフィス以上のサポート体制を整えています。
+      </p>
+      <a href="register.html" class="btn btn-white btn-lg">
+        まず無料相談を予約する <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== TEAM ========== -->
+  <section class="section" id="team">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Member's Voice</p>
-        <h2 class="section-title">会員の声</h2>
+      <div class="section-header section-header-center">
+        <p class="section-eyebrow">Our Team</p>
+        <h2 class="section-title">専任チームのご紹介</h2>
+        <p class="section-lead">
+          経験豊富なカウンセラー・コンサルタントが<br />あなたの独立を全力でサポートします。
+        </p>
       </div>
-      <div class="voice-grid">
-        <div class="voice-card">
-          <div class="voice-quote">❝</div>
-          <p class="voice-text">「転職か独立か迷っていましたが、カウンセリングで自分の強みを整理できました。入会3ヶ月でWebデザイナーとして独立し、今は月収40万を達成しています！」</p>
-          <div class="voice-author">
-            <div class="voice-avatar" style="background:#fcd5ce;">A</div>
-            <div>
-              <strong>Aさん（28歳）</strong>
-              <span>元会社員 → フリーランスWebデザイナー</span>
+      <div class="team-grid">
+
+        <div class="team-card reveal-up">
+          <div class="team-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=Evr2Ge15RfgxtpGam6j%2FikQr9DZWEmzkXmH8edfU%2Bm%2FewkMqtUlJj5unFS%2FbrCcRmtMaDbO%2BchYxo59LpPbwjJBYpuE92kAuAWbba79pUQDPalrUJ18%2BSSYgyHbQXJIgmbK%2FPgMkoN535Y2ylLpBW3C4WsiTXlBxYK6ccgC8TJYZcMZlUMEDDhXTARWxQG9tCSET&u2=zualj%2FEvnE5%2FU6gG&width=2560"
+              alt="代表 田中さくら"
+            />
+          </div>
+          <div class="team-body">
+            <h3>田中 さくら</h3>
+            <p class="team-role">代表 / シニアキャリアコンサルタント</p>
+            <p class="team-bio">元外資系コンサル勤務。2019年にHer Stageを創業。国家資格キャリアコンサルタント取得。累計200名以上のキャリア支援実績。</p>
+            <div class="team-social">
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
-        <div class="voice-card">
-          <div class="voice-quote">❝</div>
-          <p class="voice-text">「一人で抱え込んでいた不安が、コミュニティの仲間と話すだけで軽くなりました。コンサルタントの方に事業計画を一緒に作ってもらえたのが大きかったです。」</p>
-          <div class="voice-author">
-            <div class="voice-avatar" style="background:#fadadd;">M</div>
-            <div>
-              <strong>Mさん（26歳）</strong>
-              <span>元営業職 → マーケティングコンサルタント</span>
+
+        <div class="team-card reveal-up" style="--delay:.1s">
+          <div class="team-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=LQgoMrsJOV7Fc6i%2B%2FFf54mTvkR7NJKPjByfNYHPnz8aylK3w3jaTIjkGOrFWrypCtsQfn8DpgLlCGQxWLGrfxzYETXoJOILW2CJAcV7iign4xT7doggsLp31pz7B83jnYjtKiKdVE5Ysxofv8GNI%2F%2FbrgA43DnWn6lxx1bSIVx8JlSR7lt0o36gZ7sTD&u2=AsTWprUK6PEWdTvc&width=2560"
+              alt="コンサルタント 鈴木あかり"
+            />
+          </div>
+          <div class="team-body">
+            <h3>鈴木 あかり</h3>
+            <p class="team-role">リードコンサルタント</p>
+            <p class="team-bio">フリーランスデザイナーとして独立後、Her Stageに参画。Webデザイン・ブランディング領域を専門とし、50名以上の独立を支援。</p>
+            <div class="team-social">
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
         </div>
-        <div class="voice-card">
-          <div class="voice-quote">❝</div>
-          <p class="voice-text">「30歳を目前に焦りばかりでしたが、ここに来てようやく『これだ！』という方向性が見えました。女性専門ならではの安心感で、本音で相談できる唯一の場所です。」</p>
-          <div class="voice-author">
-            <div class="voice-avatar" style="background:#ffcba4;">R</div>
-            <div>
-              <strong>Rさん（29歳）</strong>
-              <span>元経理職 → オンライン起業準備中</span>
+
+        <div class="team-card reveal-up" style="--delay:.2s">
+          <div class="team-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=8B1Fp4PYfhBasqb9avNh1Fk77am3H0xzLLs9ABtJZhyjok1VEWblrcR3NiBV5vw9zAf4WJqoOYtHgeQVMK3MN3pQeiqgx6lVJIqtx%2BsCRDj9jQ%3D%3D&u2=5jMDjyJ%2BA0u7mBHD&width=2560"
+              alt="カウンセラー 山本ゆき"
+            />
+          </div>
+          <div class="team-body">
+            <h3>山本 ゆき</h3>
+            <p class="team-role">シニアカウンセラー</p>
+            <p class="team-bio">臨床心理士・キャリアコンサルタント。産業カウンセラー歴10年。ライフイベントとキャリアの両立を専門とし、丁寧なセッションが好評。</p>
+            <div class="team-social">
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="note"><i class="fa-solid fa-pen-nib"></i></a>
             </div>
+          </div>
+        </div>
+
+        <div class="team-card reveal-up" style="--delay:.3s">
+          <div class="team-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=krufjZv%2Bm8%2FL6HAXsxE60JrcETZKMjHI%2BE3ERTIjjJEhmpkTOqYcveOSVlizfcLCmE13pMmnJJtrgBA%2BP%2BOrb%2Fy61sDZAHt6IXqglWKVWsMJ7SLr6L5fbNG9e%2Fnvgimx0Kp1bjcwjKjCEWAiD8n%2F9ESQy%2FFgwGitSwViURzZoBCaW5P8iHIQ8SX6LLY%3D&u2=oQ4lCHnMvR0AJmpm&width=2560"
+              alt="コンサルタント 佐藤みなみ"
+            />
+          </div>
+          <div class="team-body">
+            <h3>佐藤 みなみ</h3>
+            <p class="team-role">ビジネスコンサルタント</p>
+            <p class="team-bio">スタートアップ創業経験者。マーケティング・SNS集客・コンテンツビジネスを専門とし、オンライン起業支援に強みを持つ。</p>
+            <div class="team-social">
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section section-tinted" id="flow">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <p class="section-eyebrow">How It Works</p>
+        <h2 class="section-title">ご利用の流れ</h2>
+      </div>
+      <div class="flow-wrap">
+        <div class="flow-item reveal-up">
+          <div class="flow-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=NcsUcnTIF6NH37Cu4EB%2FVKrWpmO3M9YYUS4SXODU3SR8Ry1JcuHKJpkPqWouMkaGDE1r8s%2FAMbgKdqO0XZrKj5mdrX8MjGY4xDuMeAKymiqmRzCZ5dMsJmNpM7Zu1ldpkUTtsTfSrSholJUEq9uwrJHCz3TV7%2B0vKcAEyqJGfCq3cUILEIvIk0cL%2FO%2F72kA%3D&u2=POkZhN88mDW%2Fzue4&width=2560"
+              alt="Step 1 申し込み"
+            />
+            <div class="flow-step-num">01</div>
+          </div>
+          <div class="flow-item-body">
+            <h3>無料相談を予約</h3>
+            <p>フォームから30分の無料相談を予約。Zoomでカウンセラーと現状・目標・お悩みをお聞きします。</p>
+          </div>
+        </div>
+        <div class="flow-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="flow-item reveal-up" style="--delay:.1s">
+          <div class="flow-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=qRK1Bxz6SFyWuo8VmAkkqgYNeqTz4vl0FfbDm9EqyKmA8JKaQGqZX1Bxrd4UqbnVg8p9Tf92Y1YwFsH518jSE0AIiV0zZYy8RZUI1PfJuL%2BO&u2=BKEPobezCK12VMj6&width=2560"
+              alt="Step 2 プラン選択"
+            />
+            <div class="flow-step-num">02</div>
+          </div>
+          <div class="flow-item-body">
+            <h3>プランを選んで入会</h3>
+            <p>相談内容をもとに最適なプランをご提案。クレジットカードで決済後、即日サービス開始。</p>
+          </div>
+        </div>
+        <div class="flow-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="flow-item reveal-up" style="--delay:.2s">
+          <div class="flow-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=4CyF5Tc%2BQJOGDMGUXk%2FYHC1yTFIozHQ1sDZc2DHdkjRx8vMSdcnsUUjluNSH%2FFhTtjUW3BtZA0%2B6TkHnaxlSLw4SxuIqOB4txZNr420kLDT%2FoA%3D%3D&u2=XblyR8DdCvfZOCWN&width=2560"
+              alt="Step 3 サポート開始"
+            />
+            <div class="flow-step-num">03</div>
+          </div>
+          <div class="flow-item-body">
+            <h3>サポートスタート</h3>
+            <p>専属コンサルタントとの初回セッションでロードマップ策定。毎月の進捗確認で着実に前進。</p>
+          </div>
+        </div>
+        <div class="flow-connector"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="flow-item reveal-up" style="--delay:.3s">
+          <div class="flow-img-wrap">
+            <img
+              src="https://sspark.genspark.ai/cfimages?u1=AGICF1hesmgZZpk1Ii%2FLQ7m5SEJSvLoA0A6vuJZgezbGjjmZTdd%2F20WNVJ%2BY5mj4m9m0NumbDMTXimChtvj1asyE3DQwGroLaYAXUepSyQRJ%2B2JZvZFoIH%2FhE4p%2B2Rc0TuO7NMYzrS1ah90qCv9xPdzMSPEMgq0JzqR8MR7WIn44vC9bOXIJax24J4u4v3dRM%2BQDfn2ECnHXNPMQJcYgUXo91Tc%3D&u2=p%2FDkyMsoa%2BjOp3%2Fc&width=2560"
+              alt="Step 4 独立実現"
+            />
+            <div class="flow-step-num">04</div>
+          </div>
+          <div class="flow-item-body">
+            <h3>独立・起業を実現！</h3>
+            <p>コミュニティの仲間と励まし合いながら夢を実現。卒業後もOGネットワークで繋がれます。</p>
           </div>
         </div>
       </div>
@@ -369,65 +587,66 @@
   </section>
 
   <!-- ========== FAQ ========== -->
-  <section class="section section-alt" id="faq">
-    <div class="container">
-      <div class="section-header">
+  <section class="section" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-left reveal-left">
         <p class="section-eyebrow">FAQ</p>
-        <h2 class="section-title">よくあるご質問</h2>
+        <h2 class="section-title">よくある<br />ご質問</h2>
+        <p class="section-lead">
+          その他のご不明点は<br />
+          無料相談にてお気軽にどうぞ。
+        </p>
+        <a href="register.html" class="btn btn-primary">無料相談を予約する</a>
+        <div class="faq-img-wrap reveal-up">
+          <img
+            src="https://sspark.genspark.ai/cfimages?u1=OXcjgl01HVppFeVD3pgVR989gVPjHPM4tjbQCM3KcrjZ0iGE7Lw4Urb%2FztbjGvrhr1ZZhjEBQ194PLTIQl5dUcgnh2jxEqLh1hfukx6sRX86I2QpMc93nX4%2F6w9Bv%2B5rIhJY1JPfI9Iu0hNejxrVUAjh3mCO%2F3lBSp%2FiPvA%3D&u2=JpmQjfQk4n4BnLAA&width=2560"
+            alt="相談する女性"
+          />
+        </div>
       </div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>入会に必要なものはありますか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>インターネット環境とZoomが使えるデバイス（スマートフォン・PC）があればOKです。特別なスキルや実績は一切不要です。「なんとなく独立したい」という段階でもぜひご相談ください。</p>
+      <div class="faq-right reveal-right">
+        <div class="faq-list" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>入会に必要なものはありますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>インターネット環境とZoomが使えるデバイスがあればOKです。特別なスキルや実績は不要です。「なんとなく独立したい」段階でも歓迎します。</p></div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>すでに会社を辞めていないと入会できませんか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>在職中の方でもご参加いただけます。むしろ「在職しながら副業・準備を進めて、タイミングを見て独立」というケースが多く、そのような段階からのサポートも得意としています。</p>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>在職中でも入会できますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>はい。「在職しながら副業・準備を進め、タイミングを見て独立」というケースが最も多いパターンです。会社に知られず進めるためのアドバイスも行います。</p></div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>男性は入会できますか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>Her Stageは25〜30代の女性を対象とした女性専用サロンです。安心・安全な環境づくりのため、現在は女性の方のみのご入会を受け付けております。</p>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>男性は入会できますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>Her Stageは女性専用サロンです。安心・安全な環境づくりのため、現在は女性の方のみのご入会を受け付けております。</p></div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>途中でプランを変更できますか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>はい、翌月からのプラン変更が可能です。マイページよりお申し込みいただくか、チャットサポートにてご連絡ください。差額の日割り精算等はなく、翌月から新プランが適用されます。</p>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>途中でプランを変更できますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>翌月からのプラン変更が可能です。マイページよりお申し込みいただくか、チャットサポートにてご連絡ください。翌月から新プランが適用されます。</p></div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>解約はいつでもできますか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>はい、最低契約期間はなく、いつでも解約できます。当月末までにマイページからお手続きいただければ、翌月分からの請求は発生しません。</p>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>解約はいつでもできますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>最低契約期間はなく、いつでも解約できます。当月末までにマイページからお手続きいただければ、翌月分からの請求は発生しません。</p></div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>コンサルタントを選ぶことはできますか？</span>
-            <i class="fa-solid fa-plus faq-icon"></i>
-          </button>
-          <div class="faq-a">
-            <p>Bloom Plan（プレミアム）では、初回カウンセリング後にご希望をヒアリングしたうえで専属コンサルタントをアサインします。ご希望があればご要望をお伝えください。</p>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>コンサルタントは選べますか？</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-a"><p>Bloom Plan（プレミアム）では、初回カウンセリング後にご希望をヒアリングしたうえで専属コンサルタントをアサインします。ご要望があればお伝えください。</p></div>
           </div>
         </div>
       </div>
@@ -436,58 +655,105 @@
 
   <!-- ========== CTA ========== -->
   <section class="cta-section">
-    <div class="cta-bg-circles">
-      <span class="circle c1"></span>
-      <span class="circle c2"></span>
+    <div class="cta-media">
+      <img
+        src="https://sspark.genspark.ai/cfimages?u1=z5nqBKkFklja62aYTzJ3b1qEKucCl3HFyh1MBwA4LF0sDgHUpm6SP159DeLYWViQgrwIHMj4%2B8cHLkkCRVKJc6quTJasRag5X%2FD5VxXMpW%2FhjQ%3D%3D&u2=C13AFtX5Ugpxk98Q&width=2560"
+        alt="独立を祝福する女性たち"
+      />
+      <div class="cta-overlay"></div>
     </div>
     <div class="container cta-content">
-      <h2 class="cta-title">まずは無料相談から。<br />あなたの <em>"次の一歩"</em> を一緒に考えます。</h2>
-      <p class="cta-desc">相談は30分・完全無料。申し込みから48時間以内にご連絡します。</p>
-      <a href="register.html" class="btn btn-white btn-lg">無料相談に申し込む <i class="fa-solid fa-arrow-right"></i></a>
+      <p class="section-eyebrow eyebrow-light">Ready to Start?</p>
+      <h2 class="cta-title">
+        あなたの「次の一歩」を、<br /><em>一緒に踏み出しましょう。</em>
+      </h2>
+      <p class="cta-lead">30分・完全無料の相談から始められます。申し込みから48時間以内にご連絡します。</p>
+      <div class="cta-actions">
+        <a href="register.html" class="btn btn-white btn-lg">
+          無料相談を予約する <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#plans" class="btn btn-ghost-light btn-lg">
+          プランを確認する
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo logo-light">
-          <span class="logo-icon">✦</span>
-          <span class="logo-text">Her <em>Stage</em></span>
-        </a>
-        <p>25〜30代女性のための<br />キャリア・独立起業支援オンラインサロン</p>
-      </div>
-      <div class="footer-links">
-        <h4>サービス</h4>
-        <ul>
-          <li><a href="#about">サービスについて</a></li>
-          <li><a href="#features">特徴</a></li>
-          <li><a href="#plans">プラン</a></li>
-          <li><a href="#faq">よくある質問</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>会員登録</h4>
-        <ul>
-          <li><a href="register.html">無料相談・会員登録</a></li>
-          <li><a href="register.html?plan=petal">Petal Plan</a></li>
-          <li><a href="register.html?plan=bloom">Bloom Plan</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>その他</h4>
-        <ul>
-          <li><a href="#">特定商取引法に基づく表記</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">利用規約</a></li>
-          <li><a href="#">運営会社</a></li>
-        </ul>
+    <div class="footer-top">
+      <div class="container footer-top-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-mark">✦</span>
+            <span class="logo-text">Her <em>Stage</em></span>
+          </a>
+          <p>25〜30代女性のための<br />キャリア転換・独立起業支援オンラインサロン</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X(Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="note"><i class="fa-solid fa-pen-nib"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav-group">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="#about">私たちについて</a></li>
+            <li><a href="#service">サービス内容</a></li>
+            <li><a href="#plans">料金プラン</a></li>
+            <li><a href="#results">実績・事例</a></li>
+            <li><a href="#team">チーム紹介</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>入会・登録</h4>
+          <ul>
+            <li><a href="register.html">無料相談を予約</a></li>
+            <li><a href="register.html?plan=petal">Petal Plan に申し込む</a></li>
+            <li><a href="register.html?plan=bloom">Bloom Plan に申し込む</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>企業情報</h4>
+          <ul>
+            <li><a href="#">運営会社</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>お問い合わせ</h4>
+          <a href="mailto:hello@herstage.jp" class="footer-email">
+            <i class="fa-solid fa-envelope"></i> hello@herstage.jp
+          </a>
+          <p class="footer-hours">受付時間 平日 10:00〜18:00</p>
+          <div class="footer-cert">
+            <span><i class="fa-solid fa-award"></i> 経済産業省採択企業</span>
+            <span><i class="fa-solid fa-shield-halved"></i> プライバシーマーク取得</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Her Stage. All rights reserved.</p>
+      <div class="container footer-bottom-inner">
+        <p>© 2024 Her Stage Inc. All rights reserved.</p>
+        <p class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+          <a href="#">特定商取引法に基づく表記</a>
+        </p>
+      </div>
     </div>
   </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
 
   <script src="src/main.js"></script>
 </body>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="src/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body class="register-page">
@@ -16,19 +16,20 @@
   <header class="header" id="header">
     <div class="header-inner container">
       <a href="index.html" class="logo">
-        <span class="logo-icon">✦</span>
+        <span class="logo-mark">✦</span>
         <span class="logo-text">Her <em>Stage</em></span>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav-list">
-          <li><a href="index.html#about"    class="nav-link">サービスについて</a></li>
-          <li><a href="index.html#features" class="nav-link">特徴</a></li>
-          <li><a href="index.html#plans"    class="nav-link">プラン</a></li>
-          <li><a href="index.html#faq"      class="nav-link">よくある質問</a></li>
+          <li><a href="index.html#about"   class="nav-link">私たちについて</a></li>
+          <li><a href="index.html#service" class="nav-link">サービス</a></li>
+          <li><a href="index.html#plans"   class="nav-link">料金プラン</a></li>
+          <li><a href="index.html#team"    class="nav-link">チーム</a></li>
+          <li><a href="index.html#faq"     class="nav-link">FAQ</a></li>
         </ul>
-        <a href="register.html" class="btn btn-primary nav-cta">無料相談に申し込む</a>
+        <a href="register.html" class="btn btn-nav">無料相談を予約する</a>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <button class="hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -36,27 +37,36 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <div class="page-hero-bg-circles">
-      <span class="circle c1"></span>
-      <span class="circle c2"></span>
+    <div class="page-hero-media">
+      <img
+        src="https://sspark.genspark.ai/cfimages?u1=T8F2Mwx662LFGqFjdl08ijoJBo1hy11M8flz8coU4Ly0dmp9qf4kN3thR%2B3V6%2BUVnaQCi0g%2FkJXhGHLEqW%2FCZsMOxtYvkl8IssFJzmA5z2py4IKnvkJvWxvzW%2Fq5tGqpJbhwN17ZK8NqGWfqnvmgs5y9QsYbALmEDGDlk7Z10jXKoQkSbH7P2bQAIG8%2FFQ%3D%3D&u2=q918%2BovggL5yJ1Rz&width=2560"
+        alt="モダンオフィス"
+      />
     </div>
     <div class="container page-hero-content">
-      <p class="section-eyebrow">Free Consultation & Sign Up</p>
+      <p class="section-eyebrow eyebrow-light" style="justify-content:center;">Free Consultation & Sign Up</p>
       <h1 class="page-hero-title">無料相談・会員登録</h1>
       <p class="page-hero-desc">
-        まずはお気軽に。30分の無料相談で<br />あなたの「次の一歩」を一緒に考えます。
+        30分の無料相談で、あなたの「次の一歩」を一緒に考えます。<br />
+        申し込みから48時間以内にご連絡いたします。
       </p>
+      <!-- Trust badges -->
+      <div class="page-hero-trust">
+        <span><i class="fa-solid fa-shield-halved"></i> 完全無料・勧誘なし</span>
+        <span><i class="fa-solid fa-lock"></i> 個人情報厳守</span>
+        <span><i class="fa-solid fa-clock"></i> 48時間以内ご返信</span>
+      </div>
     </div>
   </div>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main class="register-main">
     <div class="container register-layout">
 
-      <!-- LEFT: FORM -->
+      <!-- FORM AREA -->
       <div class="register-form-wrap">
 
-        <!-- STEP INDICATOR -->
+        <!-- Step indicator -->
         <div class="steps-indicator">
           <div class="step active" data-step="1">
             <div class="step-dot">1</div>
@@ -76,13 +86,15 @@
 
         <form class="register-form" id="registerForm" novalidate>
 
-          <!-- ========== STEP 1: PLAN ========== -->
+          <!-- ====== STEP 1 ====== -->
           <div class="form-step" id="step1">
-            <h2 class="form-step-title">ご希望のプランを選択してください</h2>
-            <p class="form-step-desc">無料相談のみご希望の方は「まず相談したい」を選んでください。</p>
+            <h2 class="form-step-title">ご希望のプランを選択</h2>
+            <p class="form-step-desc">
+              まず無料相談のみご希望の方は「まず相談したい」をお選びください。
+            </p>
 
             <div class="plan-selector">
-              <label class="plan-option" id="opt-consult">
+              <label class="plan-option">
                 <input type="radio" name="plan" value="consult" required />
                 <div class="plan-option-inner">
                   <div class="plan-option-icon">💬</div>
@@ -94,26 +106,26 @@
                 </div>
               </label>
 
-              <label class="plan-option" id="opt-petal">
+              <label class="plan-option">
                 <input type="radio" name="plan" value="petal" />
                 <div class="plan-option-inner">
                   <div class="plan-option-icon">🌸</div>
                   <div class="plan-option-body">
                     <strong>Petal Plan — ¥4,900 / 月</strong>
-                    <span>月1回カウンセリング + コミュニティ参加</span>
+                    <span>月1回カウンセリング＋コミュニティ参加</span>
                   </div>
                   <div class="plan-option-check"><i class="fa-solid fa-check"></i></div>
                 </div>
               </label>
 
-              <label class="plan-option popular-option" id="opt-bloom">
+              <label class="plan-option popular-option">
                 <span class="option-badge">おすすめ</span>
                 <input type="radio" name="plan" value="bloom" />
                 <div class="plan-option-inner">
                   <div class="plan-option-icon">🌺</div>
                   <div class="plan-option-body">
                     <strong>Bloom Plan — ¥9,000 / 月</strong>
-                    <span>月3時間コンサルティング + 全機能フルアクセス</span>
+                    <span>月3時間コンサルティング＋全機能フルアクセス</span>
                   </div>
                   <div class="plan-option-check"><i class="fa-solid fa-check"></i></div>
                 </div>
@@ -131,10 +143,10 @@
             </div>
           </div>
 
-          <!-- ========== STEP 2: USER INFO ========== -->
+          <!-- ====== STEP 2 ====== -->
           <div class="form-step hidden" id="step2">
-            <h2 class="form-step-title">お客様情報を入力してください</h2>
-            <p class="form-step-desc">ご入力いただいた情報は、サービス提供のみに使用します。</p>
+            <h2 class="form-step-title">お客様情報を入力</h2>
+            <p class="form-step-desc">ご入力いただいた情報はサービス提供のみに使用します。</p>
 
             <div class="form-grid">
               <div class="form-group">
@@ -212,24 +224,26 @@
 
             <div class="form-group">
               <label for="goal">独立・起業で実現したいこと <span class="required">*</span></label>
-              <textarea id="goal" name="goal" rows="4" placeholder="例）Webデザイナーとしてフリーランスになりたい。在宅で自分のペースで働きながら、月収30万円を目指したいです。"></textarea>
+              <textarea id="goal" name="goal" rows="4"
+                placeholder="例）Webデザイナーとしてフリーランスになりたい。在宅で自分のペースで働きながら、月収30万円を目指したいです。"></textarea>
               <span class="field-error" id="goalError"></span>
             </div>
 
             <div class="form-group">
               <label for="concern">現在のお悩み・不安なこと（任意）</label>
-              <textarea id="concern" name="concern" rows="3" placeholder="例）スキルがあるか不安、収入の目途が立てられない、どこから始めればいいかわからない…など"></textarea>
+              <textarea id="concern" name="concern" rows="3"
+                placeholder="例）スキルがあるか不安、収入の目途が立てられない、どこから始めればいいかわからない…など"></textarea>
             </div>
 
             <div class="form-group">
               <label>無料相談の希望日時（第2希望まで）<span class="required">*</span></label>
               <div class="datetime-row">
                 <div class="form-group-inline">
-                  <label for="date1" class="inline-label">第1希望</label>
+                  <span class="inline-label">第1希望</span>
                   <input type="datetime-local" id="date1" name="date1" />
                 </div>
                 <div class="form-group-inline">
-                  <label for="date2" class="inline-label">第2希望</label>
+                  <span class="inline-label">第2希望</span>
                   <input type="datetime-local" id="date2" name="date2" />
                 </div>
               </div>
@@ -239,8 +253,11 @@
             <div class="form-group">
               <label>パスワードの設定 <span class="required">*</span></label>
               <div class="password-wrap">
-                <input type="password" id="password" name="password" placeholder="8文字以上の英数字" autocomplete="new-password" />
-                <button type="button" class="toggle-pw" id="togglePw" aria-label="パスワード表示"><i class="fa-solid fa-eye"></i></button>
+                <input type="password" id="password" name="password"
+                  placeholder="8文字以上の英数字" autocomplete="new-password" />
+                <button type="button" class="toggle-pw" id="togglePw" aria-label="パスワード表示">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
               </div>
               <span class="field-error" id="passwordError"></span>
               <p class="field-hint">8文字以上・英字と数字を含む</p>
@@ -249,8 +266,11 @@
             <div class="form-group">
               <label>パスワード（確認）<span class="required">*</span></label>
               <div class="password-wrap">
-                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="もう一度入力" autocomplete="new-password" />
-                <button type="button" class="toggle-pw" id="togglePwConfirm" aria-label="パスワード表示"><i class="fa-solid fa-eye"></i></button>
+                <input type="password" id="passwordConfirm" name="passwordConfirm"
+                  placeholder="もう一度入力" autocomplete="new-password" />
+                <button type="button" class="toggle-pw" id="togglePwConfirm" aria-label="パスワード表示">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
               </div>
               <span class="field-error" id="passwordConfirmError"></span>
             </div>
@@ -259,7 +279,10 @@
               <label class="checkbox-label">
                 <input type="checkbox" id="agreeTerms" name="agreeTerms" />
                 <span class="custom-checkbox"></span>
-                <span><a href="#" target="_blank">利用規約</a>・<a href="#" target="_blank">プライバシーポリシー</a>に同意する <span class="required">*</span></span>
+                <span>
+                  <a href="#" target="_blank">利用規約</a>・<a href="#" target="_blank">プライバシーポリシー</a>に同意する
+                  <span class="required">*</span>
+                </span>
               </label>
               <span class="field-error" id="agreeTermsError"></span>
             </div>
@@ -274,14 +297,12 @@
             </div>
           </div>
 
-          <!-- ========== STEP 3: CONFIRM ========== -->
+          <!-- ====== STEP 3 ====== -->
           <div class="form-step hidden" id="step3">
-            <h2 class="form-step-title">入力内容をご確認ください</h2>
+            <h2 class="form-step-title">入力内容のご確認</h2>
             <p class="form-step-desc">以下の内容で送信します。修正がある場合は「戻る」を押してください。</p>
 
-            <div class="confirm-table" id="confirmTable">
-              <!-- JS で動的生成 -->
-            </div>
+            <div class="confirm-table" id="confirmTable"></div>
 
             <div class="form-group confirm-notice">
               <div class="notice-box">
@@ -303,7 +324,7 @@
             </div>
           </div>
 
-          <!-- ========== STEP COMPLETE ========== -->
+          <!-- ====== COMPLETE ====== -->
           <div class="form-step hidden" id="stepComplete">
             <div class="complete-wrap">
               <div class="complete-icon">🎉</div>
@@ -318,33 +339,53 @@
                 <ul>
                   <li><i class="fa-solid fa-envelope"></i> 確認メールを受け取る</li>
                   <li><i class="fa-regular fa-calendar"></i> カウンセラーからの日程調整メールを待つ</li>
-                  <li><i class="fa-brands fa-zoom"></i> Zoomにて30分の無料相談を実施</li>
+                  <li><i class="fa-solid fa-video"></i> Zoomにて30分の無料相談を実施</li>
                   <li><i class="fa-solid fa-rocket"></i> サポートスタート！</li>
                 </ul>
               </div>
-              <a href="index.html" class="btn btn-primary btn-lg">トップページへ戻る</a>
+              <a href="index.html" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-house"></i> トップページへ戻る
+              </a>
             </div>
           </div>
 
         </form>
-      </div>
+      </div><!-- /register-form-wrap -->
 
-      <!-- RIGHT: SIDEBAR -->
+      <!-- SIDEBAR -->
       <aside class="register-sidebar">
+
         <div class="sidebar-card">
           <h3><i class="fa-solid fa-shield-halved"></i> 安心してご相談ください</h3>
           <ul class="sidebar-list">
-            <li><i class="fa-solid fa-check"></i> 無料相談は完全無料・勧誘なし</li>
+            <li><i class="fa-solid fa-check"></i> 無料相談は完全無料・勧誘一切なし</li>
             <li><i class="fa-solid fa-check"></i> 女性専任カウンセラーが対応</li>
-            <li><i class="fa-solid fa-check"></i> 個人情報は厳重に管理</li>
-            <li><i class="fa-solid fa-check"></i> いつでも解約・退会できる</li>
+            <li><i class="fa-solid fa-check"></i> 個人情報はSSL暗号化通信で保護</li>
+            <li><i class="fa-solid fa-check"></i> いつでも解約・退会が可能</li>
+            <li><i class="fa-solid fa-check"></i> プライバシーマーク取得済み</li>
           </ul>
         </div>
 
-        <div class="sidebar-card sidebar-plan-summary" id="sidebarPlanSummary">
+        <div class="sidebar-card" id="sidebarPlanSummary">
           <h3><i class="fa-solid fa-list-check"></i> 選択中のプラン</h3>
           <div id="selectedPlanDisplay">
             <p class="plan-not-selected">プランを選択してください</p>
+          </div>
+        </div>
+
+        <!-- Stat box -->
+        <div class="sidebar-card sidebar-stat-box">
+          <div class="sidebar-stat-item">
+            <span class="s-stat-num">300<small>名+</small></span>
+            <span class="s-stat-label">累計会員数</span>
+          </div>
+          <div class="sidebar-stat-item">
+            <span class="s-stat-num">92<small>%</small></span>
+            <span class="s-stat-label">独立達成率</span>
+          </div>
+          <div class="sidebar-stat-item">
+            <span class="s-stat-num">4.9<small>/5</small></span>
+            <span class="s-stat-label">平均満足度</span>
           </div>
         </div>
 
@@ -352,51 +393,60 @@
           <h3><i class="fa-regular fa-message"></i> 会員の声</h3>
           <div class="sidebar-voice">
             <p>「入会前は不安でしたが、相談してみたら自分の方向性がスッキリ見えました。無料相談だけでも受けてみて！」</p>
-            <span>— Kさん（27歳）</span>
+            <span>— K さん（27歳）元営業職 → フリーランス</span>
           </div>
         </div>
 
         <div class="sidebar-card sidebar-contact">
           <h3><i class="fa-solid fa-headset"></i> お問い合わせ</h3>
-          <p>ご不明な点はお気軽に</p>
+          <p style="font-size:.83rem;color:var(--gray-500);margin-bottom:10px;">ご不明な点はお気軽にどうぞ</p>
           <a href="mailto:hello@herstage.jp" class="sidebar-email">
             <i class="fa-solid fa-envelope"></i> hello@herstage.jp
           </a>
           <p class="sidebar-hours">平日 10:00〜18:00</p>
         </div>
+
       </aside>
     </div>
   </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="logo logo-light">
-          <span class="logo-icon">✦</span>
-          <span class="logo-text">Her <em>Stage</em></span>
-        </a>
-        <p>25〜30代女性のための<br />キャリア・独立起業支援オンラインサロン</p>
-      </div>
-      <div class="footer-links">
-        <h4>サービス</h4>
-        <ul>
-          <li><a href="index.html#about">サービスについて</a></li>
-          <li><a href="index.html#plans">プラン</a></li>
-          <li><a href="index.html#faq">よくある質問</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>その他</h4>
-        <ul>
-          <li><a href="#">特定商取引法に基づく表記</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">利用規約</a></li>
-        </ul>
+    <div class="footer-top">
+      <div class="container footer-top-inner" style="grid-template-columns:2fr 1fr 1fr;">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-mark">✦</span>
+            <span class="logo-text">Her <em>Stage</em></span>
+          </a>
+          <p>25〜30代女性のためのキャリア転換・独立起業支援オンラインサロン</p>
+        </div>
+        <div class="footer-nav-group">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="index.html#about">私たちについて</a></li>
+            <li><a href="index.html#plans">料金プラン</a></li>
+            <li><a href="index.html#faq">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h4>企業情報</h4>
+          <ul>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">利用規約</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Her Stage. All rights reserved.</p>
+      <div class="container footer-bottom-inner">
+        <p>© 2024 Her Stage Inc. All rights reserved.</p>
+        <p class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+        </p>
+      </div>
     </div>
   </footer>
 
