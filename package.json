@@ -1,0 +1,13 @@
+{
+  "name": "her-stage",
+  "version": "1.0.0",
+  "description": "Her Stage — 25〜30代女性向けキャリア・独立起業支援オンラインサロン",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["salon", "career", "women", "freelance", "consulting"],
+  "author": "GenSpark AI Developer",
+  "license": "MIT"
+}
